@@ -410,6 +410,12 @@ UPDATE 'profession'
 UPDATE 'profession'
   SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
   WHERE 'id' = 6;
+--
+-- Добавление флага в таблицу profession для выведения на сайт профессии
+--
+ALTER TABLE 'profession'
+  ADD COLUMN 'can_display' boolean DEFAULT false;
+  
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
