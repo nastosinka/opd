@@ -414,7 +414,7 @@ UPDATE 'profession'
 -- Добавление флага в таблицу profession для выведения на сайт профессии
 --
 ALTER TABLE 'profession'
-  ADD COLUMN 'can_display' boolean DEFAULT false;
+  ADD COLUMN 'can_display' boolean DEFAULT FALSE;
   
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
