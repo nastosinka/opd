@@ -378,6 +378,37 @@ ALTER TABLE `point`
   ADD CONSTRAINT `point_ibfk_2` FOREIGN KEY (`id_pvk`) REFERENCES `pvk` (`id`);
 COMMIT;
 
+--
+-- Добавление поля для фото в таблицу 'profession' 
+--
+ALTER TABLE profession
+ADD photo text DEFAULT NULL; 
+--
+-- Обновление данных в таблице profession (добавление ссылок на фото)
+--
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 1;
+  
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 2;
+  
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 3;
+  
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 4;
+  
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 5;
+  
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
