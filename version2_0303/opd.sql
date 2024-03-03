@@ -381,40 +381,42 @@ COMMIT;
 --
 -- Добавление поля для фото в таблицу 'profession' 
 --
-ALTER TABLE 'profession'
-  ADD COLUMN 'photo' text DEFAULT NULL; 
+
+ALTER TABLE profession
+  ADD COLUMN photo text DEFAULT NULL; 
+  
 --
 -- Обновление данных в таблице profession (добавление ссылок на фото)
 --
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 1;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 1;
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 2;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 2;
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 3;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 3;
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 4;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 4;
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 5;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 5;
   
-UPDATE 'profession'
-  SET 'photo' = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
-  WHERE 'id' = 6;
+UPDATE profession
+  SET photo = 'https://sevkor.ru/wp-content/uploads/2019/09/Sergej-Kachan-krasivyj.jpg'
+  WHERE id = 6;
 --
 -- Добавление флага в таблицу profession для выведения на сайт профессии
 --
-ALTER TABLE 'profession'
-  ADD COLUMN 'can_display' boolean DEFAULT false;
+ALTER TABLE profession
+  ADD COLUMN can_display boolean DEFAULT false;
   
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
