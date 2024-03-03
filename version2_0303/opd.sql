@@ -382,7 +382,7 @@ COMMIT;
 -- Добавление поля для фото в таблицу 'profession' 
 --
 ALTER TABLE 'profession'
-  ADD 'photo' text DEFAULT NULL; 
+  ADD COLUMN 'photo' text DEFAULT NULL; 
 --
 -- Обновление данных в таблице profession (добавление ссылок на фото)
 --
