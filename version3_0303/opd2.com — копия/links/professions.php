@@ -6,7 +6,7 @@
 
   $info = [];
 
-  if ($query = $db->query("Select * from profession")) {
+  if ($query = $db->query("Select * from profession where can_display=1")) {
     $info = $query->fetchAll(PDO::FETCH_ASSOC);} else {
         print_r($db->errorInfo());
     }
