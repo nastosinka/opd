@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Source Sans Variable", sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #EBECE8;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: #CADABA;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #4F7942;
+    font-family:  "Source Sans Variable", sans-serif;
+}
+
+.input__box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid #4F7942;
+    background-color: #EBECE8;
+}
+
+.input__box input {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    font-size: 15px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    font-family:  "Source Sans Variable", sans-serif;
+    color: #4F7942;
+}
+
+.input__box input::placeholder {
+    color:#4F7942;
+    font-size: 15px;
+}
+
+.input__box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color:#4F7942;
+    border: 2px solid #4F7942;
+    font-family:  "Source Sans Variable", sans-serif;
+    background-color: #CADABA;
+}
+
+.wrapper .regis__link {
+    font-size: 14.5px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.regis__link p a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #4F7942;
+}
+
+.regis__link p {
+    font-family:  "Source Sans Variable", serif;
+    font-size: 15px;
+    color: #4F7942;
+}
+
+.regis__link p a:hover {
+    text-decoration: underline;
+}
