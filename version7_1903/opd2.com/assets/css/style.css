@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #EBECE8;
+    min-width: 500px;
+}
+
+*, 
+*: before,
+:after {
+    box-sizing: border-box;
+} 
+
+
+/* Комментарий */
+.container {
+    width: 100%;
+    max-width:  1600px;
+    margin: 0 auto;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    
+}
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    margin-right: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_right {
+    font-size: 20px;
+}
+
+.navigation_left {
+    font-size: 20px;
+}
+
+.nav__link {
+    font-size: 30px;
+    font-family: "Source Sans Variable", sans-serif;
+    font-weight: 600;
+    color: #4F7942;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    position: relative;
+    
+    text-decoration: none;
+    
+    transition: color .1s liner;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    
+    background-color: #A2A2D0;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+    
+}
+
+.nav__link:hover {
+    color: #A2A2D0;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+
+.intro {
+    padding-top: 105px;
+    width: 100%;
+    height: auto;
+}
+
+.intro__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__text {
+    width: 60%;
+}
+
+.intro__title {
+    margin-left: 100px;
+    margin-bottom: 30px; 
+    font-size: 50px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "Georgia";
+}
+
+.intro__title b {
+    color: #4F7942;
+    font-family: "Source Sans Variable", sans-serif;
+}
+
+.intro__subtitle {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 10;
+    text-align: left;
+    font-family: "Source Sans Variable", sans-serif;
+}
+
+.intro__picture {
+    padding-top: 50px;
+    width: 40%;
+    text-align: center;
+}
+
+.last_part {
+    width: 100%;
+}
+
+.lp__inner {
+    /*padding-top: 40px; */
+    width: 100%;
+    margin: 0 auto;
+    /*height: 80px; */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3, h4 {
+    margin: 15px 0;
+}
+
+.lp__left {
+    margin-left: 100px; 
+    font-family: "Source Sans Variable", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.lp__right {
+    margin-right: 50px; 
+    font-family: "Source Sans Variable", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
